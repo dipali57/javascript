@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        //--------------------------------------//
+        const myName=['sofia','is','my'];
+        const aboutMe=['dsad',...myName,'name'];
+
+        console.log(aboutMe);
+//Array(5) [ "dsad", "sofia", "is", "my", "name" ]
+        const name1='oasa sofia';
+        console.log([...name1]);
+//Array(10) [ "o", "a", "s", "a", " ", "s", "o", "f", "i", "a" ]
+
+
+        const numbers=[1,2,4,6];
+        function addNumbers(a,b,c,d){
+            return a+b+c+d;
+        }
+        console.log(addNumbers(...numbers));
+
+    //-------------------------------------------//
+
+   const name = 'sdsd sofia';
+
+   function spellName(a,b,c){
+       return a+b+c;
+   }
+
+   console.log(spellName(...name)); //sds
+
+   console.log(spellName(...name[3]));//dundefinedundefined
+
+   console.log(spellName([...name])); //s,d,s,d, ,s,o,f,i,aundefinedundefined
+
+   console.log(spellName({...name})); //[object object]undefinedundefined
+
+   //--------------------------------------------
+
+   // spread operators cant expand object literals values
+
+   
+    </script>
+</html>

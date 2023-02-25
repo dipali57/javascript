@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <script>
+////////////////////////////////////////////
+//using spread
+    function combineArray(arr1, arr2) {
+        return [...arr1, ...arr2];
+    }
+
+    const isArray = [1, 2, 3];
+
+    const notArray = 'random';
+
+    const arr=combineArray(isArray, notArray);
+    console.log("using spread combine array : "+ arr);
+
+/////////////////////////////////////////
+//using concat
+
+function arrayCombine(arr1,arr2){
+    return [].concat(arr1,arr2);
+}
+const array = [1,2,3];
+const noArray = 'random';
+
+const brr = arrayCombine(array,noArray);
+console.log("using concat combine array : "+ brr);
+
+
+    </script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sum = 0;
+        const numbers = [65, 44, 12, 4];
+        function myFunc(item){
+            sum=sum+item;
+        }
+        console.log(numbers.forEach(myFunc));
+//////////////////////////////////////////
+//simple for loop
+        const arrayItems = ['item1','item2','item3'];
+
+        const copyItems = [];
+
+        for(let i=0; i<arrayItems.length ; i++ ){
+            copyItems.push(arrayItems[i]);
+        }
+        console.log(copyItems);
+////////////////////////////////////////////
+//foreach loop
+        const arrayItems1 = ['item1','item2','item3'];
+
+        const copyItems1 = [];
+        arrayItems1.forEach(function(item){
+            copyItems1.push(item);
+        })
+
+        console.log(copyItems1);
+
+//////////////////////////////////////////////
+//for each with maps
+        let map = new Map();
+
+        map.set('name','jack');
+        map.set('age','27');
+
+        map.forEach(myFunction);
+        function myFunction(value,key){
+            console.log(key + " - "+value);
+        }
+/////////////////////////////////////////////////
+
+
+    </script>
+</body>
+</html>

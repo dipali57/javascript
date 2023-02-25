@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    Enter A Number: <input type="number" id="myNum">
+
+    <button onclick="myFunction()"> Submit </button>
+    <br>
+    <label id="demo"></label>
+    <input id="demo2"/>
+    <script>
+
+        function myFunction() {
+            var x = document.getElementById("myNum").value;
+            document.getElementById('demo').innerHTML = x;
+
+            //if you want to display it into input field
+            document.getElementById('demo2').value = x;
+        }
+    </script>
+</body>
+</html>

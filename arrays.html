@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let names = ['chinu','anku','chaitu','mily'];
+        // console.log(names);
+        // console.log(names.length);
+        // console.log(names[names.length - 1]);
+        
+        // const lastName = ['patil', 'ganore', 'wagh'];
+        // const allNames = names.concat(lastName);
+
+        // console.log(allNames);
+        // console.log(allNames.reverse());
+        
+        // allNames.unshift('sassy');
+        // allNames.unshift('polard');//added at the first index
+        // console.log(allNames);
+        // allNames.shift();
+        // allNames.shift();//deletes the first index
+
+        // console.log(allNames);
+        // allNames.push('pritam');//added at the last
+        // console.log(allNames);
+        // allNames.pop();//deletes last 
+        // allNames.pop();
+        // console.log(allNames);
+
+        // //splice -mutates original array
+        // const specificNames = allNames.splice(2,3); 
+        // //it removes the elements from array using position and no of elements
+        // console.log(specificNames);
+        // console.log(allNames);
+
+
+        ///////////////////////
+
+        // const name = ['priya', 'Riya', 'piya','siya'];
+        // const lastNames = 'deshmukh';
+        // let newArray = [];
+
+        // for(let i = 0; i < names.length; i++){
+        //     console.log(name[i]);
+        //    // newArray.push(name[i]);
+        //     const fullName = `${name[i]} ${lastNames}`;
+        //     newArray.push(fullName)
+        // }
+        // console.log(newArray);
+
+
+
+        ///////////////////////////
+        // const gas = [20,30,50,29];
+        // const food = [12,39,21];
+
+        // function calculateTotal(arr) {
+        //     let total = 0;
+        //     for(let i = 0; i < arr.length; i++){
+        //         total += arr[i];
+        //     }
+        //     console.log(total);
+
+        //     if(total > 100){
+        //         console.log(`whoa! you are spending way too much`);
+        //         return total;
+        //     }
+        //     console.log(`you are good total is less than 100`);
+        //     return total;
+        // }
+        // const gasTotal = calculateTotal(gas);
+        // const foodTotal = calculateTotal(food);
+        // const randomTotal = calculateTotal([200,4000,500,21])
+
+        // console.log({
+        //     gas: gasTotal,
+        //     food: foodTotal,
+        //     random: randomTotal,
+        // });
+
+        //////////////////////////
+
+        // three ways to copy elements of an array into another array in js
+
+        var first = [1,2,3];
+        var second = [4,5];
+
+        for(var i of second){
+            first.push(i);
+        }
+        console.log(first);
+
+        Array.prototype.push.apply(first ,second);
+        console.log(first);
+
+        first.push(...second);
+        console.log(first);
+        //////////////////////////
+
+    </script>
+</body>
+</html>

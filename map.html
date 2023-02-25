@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <label id="demo"></label>
+
+        <script>
+            const persons = [
+                {firstName: "dipss", lastName: "Gunjal"},
+                {firstName: "riyansh", lastName: "kamle"},
+                {firstName: "priya", lastName: "patil"},
+            ];
+
+            document.getElementById("demo").innerHTML = persons.map(getFullName);
+            function getFullName(item){
+                return [item.firstName,item.lastName].join(" ");
+            }
+        </script>
+    </body>
+</html>

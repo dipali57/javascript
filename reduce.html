@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <script>
+            var pets = ['dog', 'chicken', 'cat', 'dog', 'chicken', 'chicken', 'rabbit'];
+
+            var petCounts = pets.reduce(function (obj, pet) {
+                if (!obj[pet]) {
+                    obj[pet] = 1;
+                } else {
+                    obj[pet]++;
+                }
+                return obj;
+            }, {});
+
+            console.log(petCounts); 
+
+            //reduce function
+
+
+            const array = [1, -2, 0.3, 4, 5, -6, 7, 8, 9];
+                // let sum = 0;
+                // for (let i = 0; i < array.length; i++) {
+                //     sum = sum + array[i];
+                // }
+                // console.log(sum);
+
+                //using reduce
+
+                const sumOfArray = array.reduce(function (result, item) {
+                    return result + item;
+                });
+
+                console.log(sumOfArray);
+
+            //reduce using objects 
+
+            let foods = [
+                {name: 'steak', calories: 800 },
+                {name: 'fruit', calories: 200 },
+                {name: 'salad', calories: 100 },
+                {name: 'chips', calories: 600 },
+                {name: 'ice cream', calories: 700 },
+            ];
+
+            let total = foods.reduce(function(result , item){
+              return result + item.calories;  
+            },0)
+
+            console.log(total);
+
+            // multiple objects
+
+                let foods1 = [
+                    { name: 'steak', calories: 800, carbs: 10, fat: 30 },
+                    { name: 'fruit', calories: 200, carbs: 20, fat: 0 },
+                    { name: 'salad', calories: 100, carbs: 0, fat: 5 },
+                    { name: 'chips', calories: 300, carbs: 10, fat: 10 },
+                    { name: 'ice cream', calories: 700, carbs: 20, fat: 20 },
+                ];
+
+                let total1 = foods1.reduce(function (item,buckets){
+                    let calories = item.calories;
+                    let carbs = item.carbs;
+                    let fat = item.fat;
+
+                    buckets['calories'] += calories;
+                    buckets['carbs'] += carbs;
+                    buckets['fat'] += fat;
+
+                    return buckets;
+                },{calories:0,carbs:0,fat:0});
+                console.log(total1);
+    </script>
+</html>

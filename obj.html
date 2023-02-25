@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<script>
+/*
+/////////////////////////////////
+var apple=new Object();
+apple.color='red';
+apple.shape='round';
+
+apple.describe=function(){
+	return 'An apple is the color '+this.color+' and is the shape '+this.shape;
+}
+
+console.log(apple.describe());
+console.log(apple);
+console.log(apple.color);
+*/
+
+///////////////////////////////////
+// function Fruit(name,color,shape){
+// 	this.name=name;
+// 	this.color=color;
+// 	this.shape=shape;
+	
+// 	this.describe = function(){
+// 		return 'A '+this.name+' is the color ' +this.color+' and is the shape '+ this.shape;
+		
+// 	}
+// }
+
+// 	var apple=new Fruit('apple','red','round');
+// 	console.log(apple.shape);
+// 	console.log(apple.describe());
+	
+////////////////////////////////////
+
+// const person = {
+// 	name: 'john',
+// 	lastName: 'peters',
+// 	age: 40,
+// 	education: false,
+// 	married: true,
+// 	sibilings: ['anna', 'nana', 'isha'],
+// 	greeting: function () {
+// 		console.log('hello my name is dipss');
+// 	},
+// }
+// console.log(person.name);
+// console.log(person.sibilings[2]);
+// person.greeting();
+
+
+////////////////////////////////////////
+//by using instance of object 
+
+
+var emp = new Object();
+emp.id = 101;
+emp.name = "empname";
+emp.salary = 50000;
+
+document.write(emp.id+ " " + emp.name + " " + emp.salary);
+
+
+/////////////////////////////////////
+//by using object constructor
+
+function employee(id,name,salary){
+	this.id = id;
+	this.name = name;
+	this.salary = salary;
+}
+e = new employee(102,"abc",50000);
+
+document.write("<br>"+ e.id + " " + e.name + " " + e.salary);
+
+</script>
+</html>

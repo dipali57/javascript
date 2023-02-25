@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function greet(name, second){
+        //     console.log(second);
+        //     console.log('hello there '+name);
+        // }
+        // greet(4); // hello there 4
+        // greet('anna', 'Bob'); //bob  \n hello there anna
+        // greet('sassy'); //undefined \n hello there sassy
+
+
+        // const wallHeight = 80;
+        // function calculate(value) {
+        //     console.log('The value in cm is: '+ value * 2.54 + 'cm');
+        //     return 'hello world';
+
+            // after return statement no console.log statement execute
+        // }
+        // const width = calculate(100);
+        // const height = calculate(wallHeight);
+        
+        // const dimensions = [width,height];  //array
+        // console.log(dimensions);
+
+
+
+        // function addValues(num1, num2){
+        //     return num1 + num2;
+        // }
+        // const firstValue = addValues(3, 4);
+        // const secondValue = addValues(22, 33);
+
+        // //anonymous function
+
+        // const add = function (num1, num2){
+        //     return num1+ num2;
+        // }
+        // const thirdValue = add(4,5);
+
+        // const values = [firstValue, secondValue, thirdValue, add(8, 2)];
+        // console.log(values);
+
+        // //arrow function
+
+        // const multiply = (num1, num2) => num1 * num2;
+
+        //---------------------------------//
+        function sum(...args){
+            let total = 0;
+            for(const a of args){
+                total +=a;
+            }
+            return total;
+        }
+        console.log(sum(1,2,3));
+        //--------------------------------------
+        //function arguments
+
+        function fn(a,b,...args){
+            console.log("arg function",args);
+        }
+
+        fn(1,2,3,"A","B","c");
+    </script>
+</body>
+</html>
